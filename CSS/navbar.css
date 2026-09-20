@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* BARRA DE NAVEGACIÓN */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+
+    /* DEGRADADO vertical de rosa a color fondo */
+    background: linear-gradient(
+        to bottom,
+        #f4a0a8 0%,        /* rosa sólido arriba */
+        #f9cdd1 40%,       /* rosa más claro */
+        rgba(240, 235, 227, 0.6) 70%,   /* casi transparente */
+        transparent 100%   /* completamente transparente abajo */
+    );
+
+      /* Que la barra sea más alta para que el degradado tenga más espacio */
+      padding-bottom: 40px;
+    
+}
+
+/* BOTÓN HOME */
+.navbar-home {
+    color: #A53860;
+    font-size: 1.9rem;
+    text-decoration: none;
+    margin-left: 2%;
+    margin-top: 1.5%;
+}
+
+.navbar-home:hover {
+    color: #450920;
+}
+
+/* LADO DERECHO */
+.navbar-derecha {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 2%;
+    margin-top: 1.5%;
+}
+
+/* BOTONES DE IDIOMA */
+.idioma {
+    display: flex;
+    gap: 8px;
+}
+
+.idioma-btn {
+    background: transparent;
+    border: 2px solid #A53860;
+    color: #A53860;
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+/* El botón marcado como activo se ve relleno */
+.idioma-btn.activo {
+    background-color: #A53860;
+    color: #F7EEEE;
+}
+
+.idioma-btn:hover {
+    background-color: #f4a0a8;
+}
+
+/* BOTÓN HAMBURGUESA */
+.hamburguesa {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+/* Las tres líneas del hamburguesa */
+.hamburguesa span {
+    display: block;
+    width: 32px;
+    height: 4px;
+    background-color: #A53860;
+    border-radius: 3px;
+}
+
+/* MENÚ DESPLEGABLE */
+.menu-desplegable {
+    display: none;        /* empieza oculto */
+    position: absolute;
+    top: 80%;            /* aparece justo debajo de la barra */
+    right: 25px;
+    background-color: #FFA5AB;
+    border-radius: 15px;
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 200px;
+    z-index: 100;         /* se muestra por encima de todo lo demás */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Cuando el menú está abierto */
+.menu-desplegable.abierto {
+    display: flex;
+}
+
+.menu-desplegable a {
+    color: #A53860;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.menu-desplegable a:hover {
+    background-color: #A53860;
+    color: #F7EEEE;
+}

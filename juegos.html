@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de juegos - Jazmin Novoa</title>
+
+    <!-- Librería de íconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/juegos.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+<header class="navbar">
+
+    <!-- BOTÓN HOME (izquierda) -->
+    <a href="index.html" class="navbar-home">
+        <i class="fa-solid fa-house"></i>
+    </a>
+
+    <!-- DERECHA: botones idioma + hamburguesa -->
+    <div class="navbar-derecha">
+
+        <!-- BOTONES DE IDIOMA -->
+        <div class="idioma">
+            <button class="idioma-btn btn-es activo">Español</button>
+            <button class="idioma-btn btn-en">Inglés</button>
+        </div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="hamburguesa" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- MENÚ DESPLEGABLE -->
+    <nav class="menu-desplegable" id="menuDesplegable">
+        <a href="grafico.html">
+            <span class="es">Diseño gráfico</span>
+            <span class="en">Graphic design</span>
+        </a>
+        <a href="industrial.html">
+            <span class="es">Diseño industrial</span>
+            <span class="en">Industrial design</span>
+        </a>
+        <a href="uxui.html">
+            <span class="es">Diseño UX/UI</span>
+            <span class="en">UX/UI design</span>
+        </a>
+        <a href="juegos.html">
+            <span class="es">Diseño de juegos</span>
+            <span class="en">Game design</span>
+        </a>
+    </nav>
+
+</header>
+
+    <!-- TÍTULO DE LA PÁGINA -->
+    <main class="contenido">
+        <h2 class="titulo-seccion">
+            <span class="es">¿Cuál te gustaría ver?</span>
+            <span class="en">Which one would you like to see?</span>
+        </h2>
+
+        <!-- GRILLA DE TARJETAS -->
+        <div class="grilla-proyectos">
+
+            <!-- TARJETA 1 -->
+            <a href="patitas-en-fuga.html" class="tarjeta">
+                <span class="etiqueta">"Patitas en fuga"</span>
+                <img src="imagenes/patitas.jpg" alt="Patitas en fuga">
+                <div class="tarjeta-pie">
+                    <span class="subtitulo">
+                        <span class="es">Juego de mesa</span>
+                        <span class="en">Board game</span>
+                    </span>
+                    <span class="boton-mas">+</span>
+                </div>
+            </a>
+
+            <!-- TARJETA 2 -->
+            <a href="juego-mecanico.html" class="tarjeta">
+                <span class="etiqueta">"Juego mecánico"</span>
+                <img src="imagenes/mecanico.jpg" alt="Juego mecánico">
+                <div class="tarjeta-pie">
+                    <span class="subtitulo">
+                        <span class="es">Juego mecánico</span>
+                        <span class="en">Mechanic game</span>
+                    </span>
+                    <span class="boton-mas">+</span>
+                </div>
+            </a>
+
+            <!-- TARJETA 3 -->
+            <a href="dingdong.html" class="tarjeta">
+                <span class="etiqueta">"Ding Dong"</span>
+                <img src="imagenes/dingdong.jpg" alt="Ding Dong">
+                <div class="tarjeta-pie">
+                    <span class="subtitulo">
+                        <span class="es">Videojuego</span>
+                        <span class="en">Videogame</span>
+                    </span>
+                    <span class="boton-mas">+</span>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuDesplegable');
+            menu.classList.toggle('abierto');
+        }
+    
+        // Cierra el menú si hacés clic fuera de él
+        document.addEventListener('click', function(e) {
+            const menu = document.getElementById('menuDesplegable');
+            const hamburguesa = document.querySelector('.hamburguesa');
+    
+            if (!menu.contains(e.target) && !hamburguesa.contains(e.target)) {
+                menu.classList.remove('abierto');
+            }
+        });
+
+         // CAMBIO DE IDIOMA
+    const btnEspanol = document.querySelectorAll('.btn-es');
+    const btnIngles = document.querySelectorAll('.btn-en');
+
+    // Al cargar la página, recupera el idioma guardado
+    const idiomaGuardado = localStorage.getItem('idioma');
+    if (idiomaGuardado === 'en') {
+        document.body.classList.add('lang-en');
+        marcarBotonActivo('en');
+    }
+
+    btnEspanol.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.remove('lang-en');
+            localStorage.setItem('idioma', 'es');
+            marcarBotonActivo('es');
+        });
+    });
+
+    btnIngles.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.add('lang-en');
+            localStorage.setItem('idioma', 'en');
+            marcarBotonActivo('en');
+        });
+    });
+
+    function marcarBotonActivo(idioma) {
+        document.querySelectorAll('.btn-es').forEach(b => {
+            b.classList.toggle('activo', idioma === 'es');
+        });
+        document.querySelectorAll('.btn-en').forEach(b => {
+            b.classList.toggle('activo', idioma === 'en');
+        });
+    }
+    </script>
+
+</body>
+</html>

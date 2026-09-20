@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silla impermanente - Jazmin Novoa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/proyecto.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body id="top">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+        <a href="index.html" class="navbar-home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <div class="navbar-derecha">
+            <div class="idioma">
+                <button class="idioma-btn btn-es activo">Español</button>
+                <button class="idioma-btn btn-en">English</button>
+            </div>
+            <button class="hamburguesa" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="menu-desplegable" id="menuDesplegable">
+            <a href="grafico.html">
+                <span class="es">Diseño gráfico</span>
+                <span class="en">Graphic design</span>
+            </a>
+            <a href="industrial.html">
+                <span class="es">Diseño industrial</span>
+                <span class="en">Industrial design</span>
+            </a>
+            <a href="uxui.html">
+                <span class="es">Diseño UX/UI</span>
+                <span class="en">UX/UI design</span>
+            </a>
+            <a href="juegos.html">
+                <span class="es">Diseño de juegos</span>
+                <span class="en">Game design</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <div class="contenedor-pagina">
+
+        <!-- ETIQUETA DE CATEGORÍA -->
+        <div class="etiqueta-categoria">
+            <span class="es">Diseño industrial</span>
+            <span class="en">Industrial design</span>
+        </div>
+
+        <!-- TARJETA GRANDE -->
+        <div class="tarjeta-proyecto">
+
+            <!-- BLOQUE 1: título + texto intro a la izquierda, imagen grande a la derecha -->
+            <div class="bloque bloque-intro">
+                <div class="bloque-texto">
+                    <h1 class="titulo-proyecto">"Silla Impermanente"</h1>
+                    <p>
+                        <span class="es">Diseñar desde un entorno atravesado por el cambio implica asumir la <strong>transformación como condición permanente.</strong> La experimentación, la prueba y el error, y la revisión constante no son instancias excepcionales del proceso proyectual. En ese marco, la <strong>incomodidad</strong> de lo indefinido deja de ser un obstáculo y se convierte en territorio productivo.</span>
+                        <span class="en">Designing in an environment shaped by change means accepting <strong>transformation as a permanent condition.</strong> Experimentation, trial and error, and constant review are not exceptional stages of the design process. Within this framework, the <strong>unease of the undefined</strong> ceases to be an obstacle and becomes fertile ground.</span>
+                    </p>
+                    <p>
+                        <span class="es">Esta silla nace desde esa lógica. Su estructura, construida a partir de perfiles metálicos soldados, hace visible el sistema que la sostiene. La geometría es directa, casi esencial, y <strong>cada parte responde a una decisión estructural</strong> antes que ornamental.</span>
+                        <span class="en">This chair was conceived with that approach in mind. Its frame, constructed from welded metal sections, reveals the system that supports it. The geometry is straightforward, almost minimalist, and <strong>each part serves a structural purpose</strong> rather than an ornamental one.</span>
+                    </p>
+                    <p>
+                        <span class="es"><strong>La impermanencia, entendida como posibilidad de ajuste y relectura, se traduce en una pieza que tensiona equilibrio y asimetría, estabilidad y dinamismo.</strong></span>
+                        <span class="en"><strong>Impermanence, understood as the possibility of adjustment and reinterpretation, results in a piece that creates a tension between balance and asymmetry, stability and dynamism.</strong></span>
+                    </p>
+                    <div id="creditos-silla">
+                        <p>
+                            <span class="es"><strong>Diseñado por:</strong> Morena Guerrieri, Jazmin Novoa, Fatima Pauluk, Julieta Regueira y Marie Teufel</span>
+                            <span class="en"><strong>Design by:</strong> Morena Guerrieri, Jazmin Novoa, Fatima Pauluk, Julieta Regueira y Marie Teufel</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bloque-imagen">
+                    <img src="imagenes/Silla/Portada.jpg" alt="Silla de frente">
+                </div>
+            </div>
+
+            <!-- BLOQUE 2: imagen izquierda, texto + imagen derecha -->
+            <div class="bloque bloque-mixto">
+                <div class="bloque-imagen-con-epígrafe">
+                    <img src="imagenes/Silla/silla2.jpg" alt="zoom silla">
+                    <p class="bloque-texto-imagen">
+                        <span class="es">Fue construida mediante la soldadura de perfiles metálicos cuadrados de 30mm x 30mm y una chapa lisa galvanizada de 0,10mm, terminada con pintura al horno.</span>
+                        <span class="en">It was constructed by welding together 30mm x 30mm square metal sections and 0.10mm-thick smooth galvanised sheet metal, and finished with a baked-on paint coating.</span>
+                     </p>
+                </div>
+                <div class="bloque-texto-imagen">
+                    <p>
+                        <span class="es">Esta silla fue expuesta en el <strong>Museo Moderno</strong> de Buenos Aires, Argentina, debido a un acuerdo con la universidad. 
+                        <br>También se encuentra entre las 8 sillas finales seleccionadas por el <strong>premio del "salon del mueble argentino".</strong> </span>
+                        <span class="en">This chair was exhibited at the <strong>"Museo Moderno"</strong> in Buenos Aires, Argentina, following an agreement with the university. 
+                        <br>It is also one of the eight chairs shortlisted for the <strong>"Salón del Mueble Argentino" award</strong>.</span>
+                    </p>
+                    
+                    <img id="foto-silla" src="imagenes/Silla/silla1.jpg" alt="Perfil de silla">
+                </div>
+            </div>
+
+            <!-- BLOQUE 3: dos imágenes en paralelo con epígrafes -->
+            <div class="bloque bloque-dos-imagenes">
+                <div class="bloque-imagen-con-epígrafe">
+                    <img src="imagenes/Silla/silla3.jpg" alt="frente silla">
+                </div>
+                <div class="bloque-imagen-con-epígrafe">
+                    <img src="imagenes/Silla/silla4.jpg" alt="espalda silla">
+                </div>
+            </div>
+
+
+            <!-- BLOQUE 4: imagen grande centrada + botón -->
+            <div class="bloque bloque-final">
+                <p class="epigrafe">
+                    <span class="es">Afiche para la exposición en el Museo Moderno</span>
+                    <span class="en">Poster for the exhibition at the Modern Museum</span>
+                </p>
+                <img src="imagenes/Silla/poster.jpg" alt="poster museo">
+                <p></p>
+                <a href="https://drive.google.com/drive/folders/1529YiNjGJGXF3DFvzf3NzUWr9Z6rDE_1?usp=drive_link" target="_blank" class="boton-proceso">
+                    <span class="es">Ver imágenes del proceso</span>
+                    <span class="en">View images of the process</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FLECHAS DE NAVEGACIÓN ENTRE PROYECTOS -->
+<div class="nav-proyectos">
+    <a href="industrial.html" class="flecha-nav flecha-izq">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+     <!-- FLECHA DEL MEDIO -->
+     <a href="#top" class="flecha-nav flecha-arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <a href="arcade.html" class="flecha-nav flecha-der">
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+</div>
+
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuDesplegable');
+            menu.classList.toggle('abierto');
+        }
+        document.addEventListener('click', function(e) {
+            const menu = document.getElementById('menuDesplegable');
+            const hamburguesa = document.querySelector('.hamburguesa');
+            if (!menu.contains(e.target) && !hamburguesa.contains(e.target)) {
+                menu.classList.remove('abierto');
+            }
+        });
+
+        function abrirLightbox(imagen) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    lightboxImg.src = imagen.src;   // copia el src de la imagen clickeada
+    lightbox.classList.add('abierto');
+}
+
+function cerrarLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('abierto');
+}
+
+// También se cierra con la tecla Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        cerrarLightbox();
+    }
+});
+// CAMBIO DE IDIOMA
+const btnEspanol = document.querySelectorAll('.btn-es');
+    const btnIngles = document.querySelectorAll('.btn-en');
+
+    // Al cargar la página, recupera el idioma guardado
+    const idiomaGuardado = localStorage.getItem('idioma');
+    if (idiomaGuardado === 'en') {
+        document.body.classList.add('lang-en');
+        marcarBotonActivo('en');
+    }
+
+    btnEspanol.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.remove('lang-en');
+            localStorage.setItem('idioma', 'es');
+            marcarBotonActivo('es');
+        });
+    });
+
+    btnIngles.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.add('lang-en');
+            localStorage.setItem('idioma', 'en');
+            marcarBotonActivo('en');
+        });
+    });
+
+    function marcarBotonActivo(idioma) {
+        document.querySelectorAll('.btn-es').forEach(b => {
+            b.classList.toggle('activo', idioma === 'es');
+        });
+        document.querySelectorAll('.btn-en').forEach(b => {
+            b.classList.toggle('activo', idioma === 'en');
+        });
+    }
+    </script>
+
+        <!-- FOOTER -->
+<footer class="footer">
+
+    <!-- COLUMNA IZQUIERDA: contacto -->
+    <div class="footer-izq">
+        <p> 
+            <span class="es">Contactame directamente</span>
+            <span class="en">Contact me directly</span>
+        </p>
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            +54 9 2996330619</p>
+        <div class="footer-redes">
+        <a href="tel:+5492996330619">
+        </a>
+        </div>
+    </div>
+
+    <!-- COLUMNA CENTRO: nombre + redes -->
+    <div class="footer-centro">
+        <p class="footer-nombre">Jazmin Novoa</p>
+        <p class="footer-subtitulo">Diseñadora integral</p>
+        <p class="footer-subtitulo">Buenos Aires, Argentina</p>
+        <div class="footer-redes">
+            <a href="https://www.instagram.com/jaznovoa.lab" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jazmin-novoa" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:labdejaz.22@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- COLUMNA DERECHA: botón CV -->
+    <div class="footer-der">
+        <a href="curriculum.html" target="_blank" class="boton-cv">
+            <span class="es">Mira mi CV</span>
+            <span class="en">See my CV</span>
+        </a>
+    </div>
+
+</footer>
+
+</body>
+</html>

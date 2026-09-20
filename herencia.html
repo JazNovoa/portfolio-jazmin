@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herencia genética - Jazmin Novoa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/proyecto.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+       <!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="cerrarLightbox()">
+    <img id="lightbox-img" src="" alt="imagen ampliada">
+</div>
+</head>
+
+<body id="top">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+        <a href="index.html" class="navbar-home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <div class="navbar-derecha">
+            <div class="idioma">
+                <button class="idioma-btn btn-es activo">Español</button>
+                <button class="idioma-btn btn-en">English</button>
+            </div>
+            <button class="hamburguesa" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="menu-desplegable" id="menuDesplegable">
+            <a href="grafico.html">
+                <span class="es">Diseño gráfico</span>
+                <span class="en">Graphic design</span>
+            </a>
+            <a href="industrial.html">
+                <span class="es">Diseño industrial</span>
+                <span class="en">Industrial design</span>
+            </a>
+            <a href="uxui.html">
+                <span class="es">Diseño UX/UI</span>
+                <span class="en">UX/UI design</span>
+            </a>
+            <a href="juegos.html">
+                <span class="es">Diseño de juegos</span>
+                <span class="en">Game design</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <div class="contenedor-pagina">
+
+        <!-- ETIQUETA DE CATEGORÍA -->
+        <div class="etiqueta-categoria">
+            <span class="es">Diseño gráfico</span>
+            <span class="en">Graphic design</span>
+        </div>
+
+        <!-- TARJETA GRANDE -->
+        <div class="tarjeta-proyecto">
+
+            <!-- BLOQUE 1: título + texto intro a la izquierda, imagen grande a la derecha -->
+            <div class="bloque bloque-intro">
+                <div class="bloque-texto">
+                    <h1 class="titulo-proyecto">"Herencia genética"</h1>
+                    <p>
+                        <span class="es">Diseño de <strong>infografía</strong>. Visualización de información sobre la herencia genética de los alumnos de la universidad Torcuato Di Tella.</span>
+                        <span class="en"><strong>Infographic design</strong>. Visualisation of information on the genetic heritage of students at Torcuato Di Tella University.</span>
+                    </p>
+                    <p>
+                    <span class="es"><strong>
+                        Se diseñó 2 infografías con el objetivo de visualizar de una manera atractiva y clara los datos cuantitativos y cualitativos sobre la relación entre la descendencia geográfica de los apellidos de los estudiantes y como esto se refleja en su altura y costumbres.
+                        Todos los datos son reales y fueron recolectados a través de encuestas e investigación.
+                    </strong></span>
+                    <span class="en"><strong> Two infographics were designed with the aim of presenting, in an engaging and clear manner, quantitative and qualitative data on the relationship between the geographical origins of students’ surnames and how this is reflected in their height and customs. All the data is genuine and was collected through surveys and research.</strong></span>
+                </p>
+                    <div id="creditos-arcade">
+                        <p>
+                            <span class="es"><strong>Diseñado por:</strong> Juana Fernandez Pastor, <br>Santiago Baglioni, Jazmin Novoa</span>
+                            <span class="en"><strong>Design by:</strong> Juana Fernandez Pastor, <br>Santiago Baglioni, Jazmin Novoa</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bloque-imagen">
+                    <img src="imagenes/Herencia/portada.png" alt="Portada herencia">
+                </div>
+            </div>
+
+            <p class="subtitulitos">
+                <span class="es">Paneles completos</span>
+                <span class="en">Complete panels</span>
+            </p>
+
+            <!-- BLOQUE 1: imagen centrada-->
+            <div class="bloque-grilla">
+
+                <div class="bloque bloque-dos-imagenes">
+                    <img src="imagenes/Herencia/panel 1.png" alt="panel">
+                </div>
+            </div>
+
+             <!-- BLOQUE 2: imagen centrada 2 -->
+             <div class="bloque-grilla">
+
+                <div class="bloque bloque-dos-imagenes">
+                    <img src="imagenes/Herencia/panel2.png" alt="panel2">
+                    
+                </div>
+            </div>  
+
+            <p class="subtitulitos">Zoom</p>
+
+            <!-- BLOQUE 3: imagen centrada 3 -->
+            <div class="bloque-grilla">
+
+                <div class="bloque bloque-dos-imagenes">
+                    <img src="imagenes/Herencia/zoom 0.png" alt="zoom1">
+                    
+                </div>
+            </div>  
+
+            <!-- BLOQUE 4: imagen centrada 4-->
+            <div class="bloque-grilla">
+
+                <div class="bloque bloque-dos-imagenes">
+                    <img src="imagenes/Herencia/zoom1.png" alt="zoom2">
+                    
+                </div>
+            </div> 
+
+            <!-- BLOQUE 4: imagen centrada 4-->
+            <div class="bloque-grilla">
+
+                <div class="bloque bloque-dos-imagenes">
+                    <img src="imagenes/Herencia/zoom3.png" alt="zoom3">
+                    
+                </div>
+            </div> 
+
+            </div>
+            </div>
+
+        
+        </div>
+    </div>
+
+    <!-- FLECHAS DE NAVEGACIÓN ENTRE PROYECTOS -->
+<div class="nav-proyectos">
+    <a href="komodo.html" class="flecha-nav flecha-izq">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+     <!-- FLECHA DEL MEDIO -->
+     <a href="#top" class="flecha-nav flecha-arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <a href="tecno-world.html" class="flecha-nav flecha-der">
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+</div>
+
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuDesplegable');
+            menu.classList.toggle('abierto');
+        }
+        document.addEventListener('click', function(e) {
+            const menu = document.getElementById('menuDesplegable');
+            const hamburguesa = document.querySelector('.hamburguesa');
+            if (!menu.contains(e.target) && !hamburguesa.contains(e.target)) {
+                menu.classList.remove('abierto');
+            }
+        });
+           // CAMBIO DE IDIOMA
+    const btnEspanol = document.querySelectorAll('.btn-es');
+    const btnIngles = document.querySelectorAll('.btn-en');
+
+    // Al cargar la página, recupera el idioma guardado
+    const idiomaGuardado = localStorage.getItem('idioma');
+    if (idiomaGuardado === 'en') {
+        document.body.classList.add('lang-en');
+        marcarBotonActivo('en');
+    }
+
+    btnEspanol.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.remove('lang-en');
+            localStorage.setItem('idioma', 'es');
+            marcarBotonActivo('es');
+        });
+    });
+
+    btnIngles.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.add('lang-en');
+            localStorage.setItem('idioma', 'en');
+            marcarBotonActivo('en');
+        });
+    });
+
+    function marcarBotonActivo(idioma) {
+        document.querySelectorAll('.btn-es').forEach(b => {
+            b.classList.toggle('activo', idioma === 'es');
+        });
+        document.querySelectorAll('.btn-en').forEach(b => {
+            b.classList.toggle('activo', idioma === 'en');
+        });
+    }
+    </script>
+
+        <!-- FOOTER -->
+<footer class="footer">
+
+     <!-- COLUMNA IZQUIERDA: contacto -->
+     <div class="footer-izq">
+        <p> 
+            <span class="es">Contactame directamente</span>
+            <span class="en">Contact me directly</span>
+        </p>
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            +54 9 2996330619</p>
+        <div class="footer-redes">
+        <a href="tel:+5492996330619">
+        
+        </a>
+        </div>
+    </div>
+
+    <!-- COLUMNA CENTRO: nombre + redes -->
+    <div class="footer-centro">
+        <p class="footer-nombre">Jazmin Novoa</p>
+        <p class="footer-subtitulo">Diseñadora integral</p>
+        <p class="footer-subtitulo">Buenos Aires, Argentina</p>
+        <div class="footer-redes">
+            <a href="https://www.instagram.com/jaznovoa.lab" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jazmin-novoa" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:labdejaz.22@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- COLUMNA DERECHA: botón CV -->
+    <div class="footer-der">
+        <a href="curriculum.html" target="_blank" class="boton-cv">
+            <span class="es">Mira mi CV</span>
+            <span class="en">See my CV</span>
+        </a>
+    </div>
+
+</footer>
+
+</body>
+</html>

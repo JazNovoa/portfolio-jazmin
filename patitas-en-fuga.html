@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas en Fuga - Jazmin Novoa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/proyecto.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body id="top">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+        <a href="index.html" class="navbar-home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <div class="navbar-derecha">
+            <div class="idioma">
+                <button class="idioma-btn btn-es activo">Español</button>
+                <button class="idioma-btn btn-en">English</button>
+            </div>
+            <button class="hamburguesa" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="menu-desplegable" id="menuDesplegable">
+            <a href="grafico.html">
+                <span class="es">Diseño gráfico</span>
+                <span class="en">Graphic design</span>
+            </a>
+            <a href="industrial.html">
+                <span class="es">Diseño industrial</span>
+                <span class="en">Industrial design</span>
+            </a>
+            <a href="uxui.html">
+                <span class="es">Diseño UX/UI</span>
+                <span class="en">UX/UI design</span>
+            </a>
+            <a href="juegos.html">
+                <span class="es">Diseño de juegos</span>
+                <span class="en">Game design</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <div class="contenedor-pagina">
+
+        <!-- ETIQUETA DE CATEGORÍA -->
+        <div class="etiqueta-categoria">
+            <span class="es">Diseño de juegos</span>
+            <span class="en">Game design</span>
+        </div>
+
+        <!-- TARJETA GRANDE -->
+        <div class="tarjeta-proyecto">
+
+            <!-- BLOQUE 1: título + texto intro a la izquierda, imagen grande a la derecha -->
+            <div class="bloque bloque-intro">
+                <div class="bloque-texto">
+                    <h1 class="titulo-proyecto">"Patitas en Fuga"</h1>
+                    <p>
+                        <span class="es">Diseño de un <strong>juego de mesa</strong> desde cero: mecánica, balance, reglas, arte y producción.</span>
+                        <span class="en">Designing a <strong>board game</strong> from scratch: mechanics, balance, rules, art and production.</span>
+                    </p>
+                    <p>
+                        <span class="es"><strong>Patitas en Fuga es un juego de estrategia competitiva con un tablero modular donde tenés que recolectar premios y escapar antes que los demás jugadores.</strong></span>
+                        <span class="en"><strong>'Patitas en fuga' is a competitive strategy game featuring a modular board where you have to collect prizes and escape before the other players.</strong></span>
+                    </p>
+                    <div class="creditos">
+                        <p>
+                            <span class="es"><strong>Diseñado por:</strong> Juana Fernandez Pastor, Violeta Godoy, Jazmin Novoa</span>
+                            <span class="en"><strong>Design by:</strong> Juana Fernandez Pastor, Violeta Godoy, Jazmin Novoa</span>
+                        </p>
+                        <p>
+                            <span class="es"><strong>Ilustraciones:</strong> Violeta Godoy</span>
+                            <span class="en"><strong>Ilustrations:</strong> Violeta Godoy</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bloque-imagen">
+                    <img src="imagenes/patitas/foto-principal.jpg" alt="Vista general del juego Patitas en Fuga">
+                </div>
+            </div>
+
+            <!-- BLOQUE 2: imagen izquierda, texto + imagen derecha -->
+            <div class="bloque bloque-mixto">
+                <div class="bloque-imagen-con-epígrafe">
+                    <img src="imagenes/patitas/tablero.jpg" alt="Tablero modular">
+                    <p class="epigrafe">
+                        <span class="es">Tablero modular</span>
+                        <span class="en">Modular board</span>
+                    </p>
+                </div>
+                <div class="bloque-texto-imagen">
+                    <p>
+                        <span class="es">Cada elemento del juego es <strong>producción propia</strong>. Trabajamos con impresión 3D en resina para los personajes (perros), corte láser e impresión sobre imán (es un juego imantado) para las losetas, corte láser e impresión en papel sticker para los premios (pelota, hueso y filete). También realizamos cartas y las cajas impresas y laminadas.</span>
+                        <span class="en">Every element of the game is <strong>made by us</strong>. We use 3D resin printing for the characters (dogs), laser cutting and printing on magnets (as it is a magnetic game) for the tiles, and laser cutting and printing on sticker paper for the prizes (ball, bone and steak). We also produce the cards and the printed, laminated boxes.</span>
+                    </p>
+                    <p class="epigrafe-subtitulo">
+                        <span class="es">Personajes y premios</span>
+                        <span class="en">Characters and prizes</span>
+                    </p>
+                    <img src="imagenes/patitas/personajes.jpg" alt="Personajes y premios del juego">
+                </div>
+            </div>
+
+            <!-- BLOQUE 3: dos imágenes en paralelo con epígrafes -->
+            <div class="bloque bloque-dos-imagenes">
+                <div class="bloque-imagen-con-epígrafe">
+                    <img src="imagenes/patitas/cartas-personajes.jpg" alt="Cartas de personajes">
+                    <p class="epigrafe">
+                        <span class="es">Cartas de personajes</span>
+                        <span class="en">Character cards</span>
+                    </p>
+                </div>
+                <div class="bloque-imagen-con-epígrafe">
+                    <img src="imagenes/patitas/cartas-accion.jpg" alt="Cartas de acción">
+                    <p class="epigrafe">
+                        <span class="es">Cartas de acción</span>
+                        <span class="en">Action cards</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- BLOQUE 4: imagen grande centrada + botón -->
+            <div class="bloque bloque-final">
+                <img src="imagenes/patitas/caja.jpg" alt="Caja del juego">
+                <a href="https://drive.google.com/drive/folders/1OsXq8K2BIWzHOSmOjrJRUq_d5sanGY3q?usp=drive_link" target="_blank" class="boton-proceso">
+                    <span class="es">Ver imágenes del proceso</span>
+                    <span class="en">View images of the process</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FLECHAS DE NAVEGACIÓN ENTRE PROYECTOS -->
+<div class="nav-proyectos">
+    <a href="juegos.html" class="flecha-nav flecha-izq">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+     <!-- FLECHA DEL MEDIO -->
+     <a href="#top" class="flecha-nav flecha-arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <a href="juego-mecanico.html" class="flecha-nav flecha-der">
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+</div>
+
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuDesplegable');
+            menu.classList.toggle('abierto');
+        }
+        document.addEventListener('click', function(e) {
+            const menu = document.getElementById('menuDesplegable');
+            const hamburguesa = document.querySelector('.hamburguesa');
+            if (!menu.contains(e.target) && !hamburguesa.contains(e.target)) {
+                menu.classList.remove('abierto');
+            }
+        });
+
+        function abrirLightbox(imagen) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    lightboxImg.src = imagen.src;   // copia el src de la imagen clickeada
+    lightbox.classList.add('abierto');
+}
+
+function cerrarLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('abierto');
+}
+
+// También se cierra con la tecla Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        cerrarLightbox();
+    }
+});
+// CAMBIO DE IDIOMA
+    const btnEspanol = document.querySelectorAll('.btn-es');
+    const btnIngles = document.querySelectorAll('.btn-en');
+
+    // Al cargar la página, recupera el idioma guardado
+    const idiomaGuardado = localStorage.getItem('idioma');
+    if (idiomaGuardado === 'en') {
+        document.body.classList.add('lang-en');
+        marcarBotonActivo('en');
+    }
+
+    btnEspanol.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.remove('lang-en');
+            localStorage.setItem('idioma', 'es');
+            marcarBotonActivo('es');
+        });
+    });
+
+    btnIngles.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.add('lang-en');
+            localStorage.setItem('idioma', 'en');
+            marcarBotonActivo('en');
+        });
+    });
+
+    function marcarBotonActivo(idioma) {
+        document.querySelectorAll('.btn-es').forEach(b => {
+            b.classList.toggle('activo', idioma === 'es');
+        });
+        document.querySelectorAll('.btn-en').forEach(b => {
+            b.classList.toggle('activo', idioma === 'en');
+        });
+    }
+    </script>
+
+        <!-- FOOTER -->
+<footer class="footer">
+
+    <!-- COLUMNA IZQUIERDA: contacto -->
+    <div class="footer-izq">
+        <p> 
+            <span class="es">Contactame directamente</span>
+            <span class="en">Contact me directly</span>
+        </p>
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            +54 9 2996330619</p>
+        <div class="footer-redes">
+        <a href="tel:+5492996330619">
+            
+        </a>
+        </div>
+    </div>
+
+    <!-- COLUMNA CENTRO: nombre + redes -->
+    <div class="footer-centro">
+        <p class="footer-nombre">Jazmin Novoa</p>
+        <p class="footer-subtitulo">Diseñadora integral</p>
+        <p class="footer-subtitulo">Buenos Aires, Argentina</p>
+        <div class="footer-redes">
+            <a href="https://www.instagram.com/jaznovoa.lab" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jazmin-novoa" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:labdejaz.22@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- COLUMNA DERECHA: botón CV -->
+    <div class="footer-der">
+        <a href="curriculum.html" target="_blank" class="boton-cv">
+            <span class="es">Mira mi CV</span>
+            <span class="en">See my CV</span>
+        </a>
+    </div>
+
+</footer>
+
+</body>
+</html>

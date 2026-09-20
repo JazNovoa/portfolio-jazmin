@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jazmin Novoa</title>
+
+    <!-- Librería de íconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Tu archivo CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/proyecto.css">
+    <link rel="stylesheet" href="css/industrial.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+<header class="navbar">
+
+    <!-- BOTÓN HOME (izquierda) -->
+    <a href="index.html" class="navbar-home">
+        <i class="fa-solid fa-house"></i>
+    </a>
+
+    <!-- DERECHA: botones idioma + hamburguesa -->
+    <div class="navbar-derecha">
+
+        <!-- BOTONES DE IDIOMA -->
+        <div class="idioma">
+            <button class="idioma-btn btn-es activo">Español</button>
+            <button class="idioma-btn btn-en">English</button>
+        </div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="hamburguesa" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- MENÚ DESPLEGABLE -->
+    <nav class="menu-desplegable" id="menuDesplegable">
+        <a href="grafico.html">
+            <span class="es">Diseño gráfico</span>
+            <span class="en">Graphic design</span>
+        </a>
+        <a href="industrial.html">
+            <span class="es">Diseño industrial</span>
+            <span class="en">Industrial design</span>
+        </a>
+        <a href="uxui.html">
+            <span class="es">Diseño UX/UI</span>
+            <span class="en">UX/UI design</span>
+        </a>
+        <a href="juegos.html">
+            <span class="es">Diseño de juegos</span>
+            <span class="en">Game design</span>
+        </a>
+    
+    </nav>
+
+</header>
+
+<main class="contenido">
+
+    <div class="contenedor-inicio">
+
+    <section class="solapa">
+        <!-- ÍCONOS DE REDES SOCIALES -->
+        <div class="redes-sociales">
+          <a href="https://www.instagram.com/jaznovoa.lab" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jazmin-novoa" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="mailto:labdejaz.22@gmail.com">
+              <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a href="tel:+5492996330619">
+              <i class="fa-solid fa-phone"></i>
+          </a>
+      </div>
+
+  </section>
+
+    <!-- TARJETA PRINCIPAL (la grande rosa arriba) -->
+    <section id="tarjeta-principal">
+
+
+
+        <!-- CONTENIDO: TEXTO + FOTO -->
+        <div class="contenido-principal">
+
+            <!-- TEXTO IZQUIERDA -->
+            <div class="texto">
+                <h1 class="soy"><span class="es">Soy</span>
+                    <span class="en">I am</span>
+                    <br>Jazmin Novoa</h1>
+                <p>
+                    <span class="es">Recientemente me recibí como <strong>Licenciada en Diseño</strong> en
+                    la Universidad Torcuato Di Tella, en Buenos Aires, <strong>Argentina</strong>.</span>
+                    <span class="en">I recently graduated as a <strong>Bachelor in Design</strong> from
+                        Universidad Torcuato Di Tella, in Buenos Aires, <strong>Argentina</strong>.</span>
+                </p>
+                <p>
+                    <span class="es">Mi formación en <strong>diseño integral</strong> me permitió desarrollar
+                    una mirada transversal, pudiendo combinar pensamiento conceptual, experimentación
+                    y resolución práctica. A lo largo de mi carrera trabajé en proyectos que
+                    abarcan desde la creación y fabricación de objetos hasta el diseño de juegos
+                    y experiencias interactivas. Disfruto involucrarme en todo el
+                    <strong>proceso de diseño</strong>: investigar, prototipar, testear y
+                    transformar ideas en propuestas concretas y funcionales.</span>
+                    <span class="en">My training in <strong>integral design</strong> allowed me to develop
+                        a transversal perspective, combining conceptual thinking, experimentation
+                        and practical problem-solving. Throughout my career I worked on projects
+                        ranging from object creation and fabrication to game design
+                        and interactive experiences. I enjoy being involved in the entire
+                        <strong>design process</strong>: researching, prototyping, testing and
+                        transforming ideas into concrete and functional proposals.</span>
+                </p>
+            </div>
+
+            <!-- FOTO DERECHA -->
+            <div class="foto">
+                <img src="imagenes/mi cuadro2.png" alt="Foto de Jazmin Novoa">
+            </div>
+
+        </div>
+    </section>
+
+    </div>
+
+</main>
+
+    <!-- TARJETA DE BOTONES (la pequeña rosa abajo) -->
+    <section id="tarjeta-botones">
+        <h2> <span class="es">¿Qué te gustaría ver?</span>
+            <span class="en">What would you like to see?</span>
+        </h2>
+
+        <div class="botones">
+            <a href="grafico.html" class="boton">
+                <span class="es">Diseño gráfico</span>
+                <span class="en"> Graphic design</span>
+            </a>
+            <a href="industrial.html" class="boton">
+                <span class="es">Diseño industrial</span>
+                <span class="en">Industrial design</span>
+            </a>
+            <a href="uxui.html" class="boton">
+                <span class="es">Diseño UX/UI</span>
+                <span class="en">UX/UI design</span>
+            </a>
+            <a href="juegos.html" class="boton">
+                <span class="es">Diseño de juegos</span>
+                <span class="en">Game design</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- TÍTULO DE LA PÁGINA -->
+    <main class="contenido-destacados">
+        <h2 class="titulo-destacados">
+            <span class="es">Proyectos destacados</span>
+            <span class="en">Featured projects</span>
+        </h2>
+
+        <!-- GRILLA DE TARJETAS -->
+        <div id="destacados" class="grilla-proyectos">
+
+            <!-- TARJETA 1 -->
+            <a href="gamer.html" class="tarjeta">
+                <span class="etiqueta">"Gamer de Bolsillo"</span>
+                <img src="imagenes/gamer/portada.png" alt="gamer">
+                <div class="tarjeta-pie">
+                    <span class="subtitulo">
+                        <span class="es">Diseño de quiz web</span>
+                        <span class="en">Web quiz design</span>
+                    </span>
+                    <span class="boton-mas">+</span>
+                </div>
+            </a>
+
+            <!-- TARJETA 2 -->
+            <a href="patitas-en-fuga.html" class="tarjeta">
+                <span class="etiqueta">"Patitas en fuga"</span>
+                <img src="imagenes/patitas.jpg" alt="Patitas en fuga">
+                <div class="tarjeta-pie">
+                    <span class="subtitulo">
+                        <span class="es">Juego de mesa</span>
+                        <span class="en">Board game</span>
+                    </span>
+                    <span class="boton-mas">+</span>
+                </div>
+            </a>
+
+            <!-- TARJETA 3 -->
+            <a href="silla.html" class="tarjeta">
+                <span class="etiqueta">"Silla impermanente"</span>
+                <img src="imagenes/Silla/Portada2.jpg" alt="Silla">
+                <div class="tarjeta-pie">
+                    <span class="subtitulo">
+                        <span class="es">Diseño de silla</span>
+                        <span class="en">Chair design</span>
+                    </span>
+                    <span class="boton-mas">+</span>
+                </div>
+            </a>
+
+            <!-- TARJETA 4 -->
+            <a href="brava.html" class="tarjeta">
+                <span class="etiqueta">"Brava"</span>
+                <img src="imagenes/Brava/Portada.jpg" alt="Identidad cultural">
+                <div class="tarjeta-pie">
+                    <span class="subtitulo">
+                        <span class="es">Identidad cultural</span>
+                        <span class="en">Cultural identity</span>
+
+                    </span>
+                    <span class="boton-mas">+</span>
+                </div>
+            </a>
+
+
+        </div>
+        
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuDesplegable');
+            menu.classList.toggle('abierto');
+        }
+    
+        // Cierra el menú si hacés clic fuera de él
+        document.addEventListener('click', function(e) {
+            const menu = document.getElementById('menuDesplegable');
+            const hamburguesa = document.querySelector('.hamburguesa');
+    
+            if (!menu.contains(e.target) && !hamburguesa.contains(e.target)) {
+                menu.classList.remove('abierto');
+            }
+        });
+
+         // CAMBIO DE IDIOMA
+    const btnEspanol = document.querySelectorAll('.btn-es');
+    const btnIngles = document.querySelectorAll('.btn-en');
+
+    // Al cargar la página, recupera el idioma guardado
+    const idiomaGuardado = localStorage.getItem('idioma');
+    if (idiomaGuardado === 'en') {
+        document.body.classList.add('lang-en');
+        marcarBotonActivo('en');
+    }
+
+    btnEspanol.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.remove('lang-en');
+            localStorage.setItem('idioma', 'es');
+            marcarBotonActivo('es');
+        });
+    });
+
+    btnIngles.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.add('lang-en');
+            localStorage.setItem('idioma', 'en');
+            marcarBotonActivo('en');
+        });
+    });
+
+    function marcarBotonActivo(idioma) {
+        document.querySelectorAll('.btn-es').forEach(b => {
+            b.classList.toggle('activo', idioma === 'es');
+        });
+        document.querySelectorAll('.btn-en').forEach(b => {
+            b.classList.toggle('activo', idioma === 'en');
+        });
+    }
+    </script>
+
+    <!-- FOOTER -->
+<footer class="footer">
+
+    <!-- COLUMNA IZQUIERDA: contacto -->
+    <div class="footer-izq">
+        <p> 
+            <span class="es">Contactame directamente</span>
+            <span class="en">Contact me directly</span>
+        </p>
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            +54 9 2996330619</p>
+        <div class="footer-redes">
+        <a href="tel:+5492996330619">
+        </a>
+        </div>
+    </div>
+
+    <!-- COLUMNA CENTRO: nombre + redes -->
+    <div class="footer-centro">
+        <p class="footer-nombre">Jazmin Novoa</p>
+        <p class="footer-subtitulo">Diseñadora integral</p>
+        <p class="footer-subtitulo">Buenos Aires, Argentina</p>
+        <div class="footer-redes">
+            <a href="https://www.instagram.com/jaznovoa.lab" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jazmin-novoa" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:labdejaz.22@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- COLUMNA DERECHA: botón CV -->
+    <div class="footer-der">
+        <a href="curriculum.html" target="_blank" class="boton-cv">
+            <span class="es">Mira mi CV</span>
+            <span class="en">See my CV</span>
+        </a>
+    </div>
+
+</footer>
+
+</body>
+</html>

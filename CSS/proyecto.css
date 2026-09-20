@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contenedor-pagina {
+    max-width: 1000px;      /* mismo ancho que antes tenía la tarjeta */
+    margin: 0 auto;        /* se centra solo en cualquier pantalla */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;             /* espacio entre la etiqueta y la tarjeta */
+}
+
+
+/* ETIQUETA DE CATEGORÍA */
+.etiqueta-categoria {
+    display:inline-block;
+    align-self: flex-start;  /* se queda a la izquierda */
+    background-color: #A53860;
+    color: #F7EEEE;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+
+}
+
+/* TARJETA GRANDE */
+.tarjeta-proyecto {
+    background-color: #FFA5AB;
+    border-radius: 30px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;  /* los bloques se apilan verticalmente */
+    gap: 50px;               /* espacio entre cada bloque */
+}
+
+/* TODOS LOS BLOQUES comparten esta base */
+.bloque {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start; /* se alinean desde arriba, no importa la altura */
+}
+
+/* BLOQUE 1 — intro: texto izquierda, imagen derecha */
+.bloque-intro {
+    align-items: flex-start;
+}
+
+.bloque-intro .bloque-texto {
+    flex: 1;          /* ocupa el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+    color: #450920;
+    
+}
+
+.bloque-intro .bloque-imagen {
+    flex: 1;
+}
+
+/* BLOQUE 2 — mixto: imagen izquierda, texto+imagen derecha */
+.bloque-mixto {
+    align-items: flex-start;
+}
+
+.bloque-mixto .bloque-texto-imagen {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* BLOQUE 3 — dos imágenes en paralelo */
+.bloque-dos-imagenes {
+    justify-content: center;
+}
+
+/* BLOQUE 4 — imagen grande centrada + botón */
+.bloque-final {
+    flex-direction: column;
+    align-items: flex-end;   /* el botón va a la derecha */
+    gap: 20px;
+}
+
+.bloque-final img {
+    width: 100%;
+}
+
+/* TODAS LAS IMÁGENES se adaptan al contenedor */
+.bloque img {
+    width: 100%;
+    height: auto;        /* mantiene proporción original sin deformar */
+    border-radius: 15px;
+    display: block;
+}
+
+/* IMÁGENES CON EPÍGRAFE */
+.bloque-imagen-con-epígrafe {
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    gap: 8px;
+}
+
+/* TEXTOS */
+.titulo-proyecto {
+    font-size: 36px;
+    color: #A53860;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.creditos {
+    margin-top: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    color: #450920;
+}
+
+.epigrafe {
+    font-size: 15px;
+    color: #A53860;
+    text-align: left;
+    font-weight: 500;
+}
+
+.epigrafe-subtitulo {
+    font-size: 15px;
+    font-weight: 500;
+    color: #A53860;
+    margin-top: 120px;
+}
+
+.epigrafe-mapu {
+    font-size: 20px;
+    color: #A53860;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* BOTÓN VER PROCESO */
+.boton-proceso {
+    background-color: #f0ebe3;
+    color: #450920;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    align-self: flex-end;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.boton-proceso:hover {
+    background-color: #A53860;
+    color: #f0ebe3;
+}
+
+.boton-proceso-mapu {
+    background-color: #f0ebe3;
+    color: #450920;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    align-self: center;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.boton-proceso-mapu:hover {
+    background-color: #A53860;
+    color: #f0ebe3;
+}
+
+.contenido {
+    padding: 30px 20px;
+}
+
+/* CONTENEDOR DE FLECHAS */
+.nav-proyectos {
+    max-width: 900px;        /* mismo ancho que el resto del contenido */
+    margin: 20px auto 30px auto;
+    display: flex;
+    justify-content: space-between;  /* una flecha a cada lado */
+}
+
+/* ESTILO BASE DE CADA FLECHA */
+.flecha-nav {
+    background-color: #FFA5AB;
+    color: #450920;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;      /* forma circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.flecha-nav:hover {
+    background-color: #A53860;
+    color: #f0ebe3;
+}
+
+#creditos-mecanico {
+    margin-top: 285px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    color: #450920;
+}
+
+#creditos-dingdong {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    color: #450920;
+}
+
+#creditos-tecno {
+    margin-top: 335px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    color: #450920;
+}
+
+#creditos-silla {
+    margin-top: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    color: #450920;
+}
+
+#creditos-arcade {
+    margin-top: 187px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    color: #450920;
+}
+
+#creditos-gamer {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    color: #450920;
+}
+
+#epigrafe-dingdong {
+    font-size: 15px;
+    font-weight: 500;
+    color: #A53860;
+    margin-top: 215px;
+}
+
+#foto-silla {
+    margin-top: 100px;
+}
+
+.subtitulitos {
+    display:inline-block;
+    align-self: flex-start;  /* se queda a la izquierda */
+    background-color: #A53860;
+    color: #F7EEEE;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* PARA UNA SOLA IMGEN*/
+.bloque-imagen-chica {
+    width: 80%;
+    justify-content: center;
+}
+
+/* DING DONG IMAGENES*/
+/* CONTENEDOR DEL BLOQUE CON ETIQUETA */
+.bloque-grilla {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* GRILLA DE 2 COLUMNAS */
+.grilla-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* 2 columnas de igual ancho */
+    gap: 15px;
+}
+
+.grilla-2col img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+
+/* Si la grilla tiene 3 imágenes, la última se centra */
+.grilla-2col img:last-child:nth-child(odd) {
+    grid-column: 1 / -1;       /* ocupa las 2 columnas */
+    max-width: 50%;            /* pero no se estira, queda centrada */
+    margin: 0 auto;
+}
+
+.contenedor-video {
+    display: flex;
+    justify-content: center;
+}
+
+.video-proyecto {
+    width: 60%;         /* ajustá este porcentaje a tu gusto */
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+
+/* IMAGEN CLICKEABLE */
+.imagen-clickeable {
+    cursor: zoom-in;     /* el cursor cambia a lupa al pasar por encima */
+    transition: opacity 0.2s;
+}
+
+.imagen-clickeable:hover {
+    opacity: 0.85;       /* se oscurece levemente al hacer hover */
+}
+
+/* FONDO OSCURO DEL LIGHTBOX */
+.lightbox {
+    display: none;                        /* empieza oculto */
+    position: fixed;                      /* cubre toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* fondo negro semitransparente */
+    z-index: 2000;                        /* por encima de todo, incluso la navbar */
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+
+/* Cuando está abierto */
+.lightbox.abierto {
+    display: flex;
+}
+
+/* IMAGEN DENTRO DEL LIGHTBOX */
+#lightbox-img {
+    max-width: 90%;       /* no se sale de la pantalla */
+    max-height: 90vh;     /* no supera el alto de la pantalla */
+    border-radius: 12px;
+    object-fit: contain;  /* mantiene proporciones sin recortar */
+}
+
+
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 650px) {
+    .bloque {
+        flex-direction: column;  /* todo pasa a columna en celular */
+    }
+
+    .bloque-dos-imagenes {
+        flex-direction: column;
+    }
+
+    .bloque-final {
+        align-items: center;
+    }
+}
+/* En celulares ocupa todo el ancho */
+@media (max-width: 650px) {
+    .video-proyecto {
+        width: 100%;
+    }
+}

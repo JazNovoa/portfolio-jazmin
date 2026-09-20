@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7EEEE;
+    font-family: "Montserrat", sans-serif;
+    color: #450920;
+    padding-top: 60px;
+}
+
+/* TARJETA PRINCIPAL */
+#tarjeta-principal {
+    background-color: #FFA5AB;
+    border-radius: 0 30px 30px 30px;   /* esquina superior izquierda recta para pegarse a la solapa */
+    padding: 30px;
+    overflow: hidden;    /* ← ESTA línea evita que la imagen se salga */
+}
+
+/* ÍCONOS DE REDES SOCIALES */
+.redes-sociales {
+    display: flex;
+    gap: 20px;
+    align-self: flex-start;
+    background-color: #FFA5AB;
+    padding: 15px 20px;
+    border-radius: 15px 15px 0 0;
+    
+}
+
+.redes-sociales a {
+    color: #450920;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #f0ebe3;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.redes-sociales a:hover {
+    background-color: #A53860;
+    color: #f0ebe3;
+}
+
+/* CONTENIDO PRINCIPAL (texto + foto) */
+.contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    
+}
+
+/* TEXTO */
+.texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 30px 20px 0 20px; /* padding que saque del body */
+}
+
+.texto h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.soy {
+    font-weight: bold;
+    font-size: 40px;
+    color: #A53860;
+    margin-top: -20px;
+    
+}
+
+.texto p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* FOTO */
+.foto {
+    width: 265px;
+    flex-shrink: 0;
+    align-self: flex-end;   /* se pega a la base del contenedor */
+    overflow: hidden;        /* recorta lo que se salga del contenedor */
+    line-height: 0;          /* elimina el espacio vacío debajo de la imagen */
+}
+
+.foto img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;  /* solo las esquinas de arriba redondeadas */
+    margin-bottom: 0;
+}
+
+/* TARJETA DE BOTONES */
+#tarjeta-botones {
+    background-color: #FFA5AB;
+    border-radius: 30px;
+    padding: 25px 30px;
+    max-width: 900px;
+    margin: -35px auto;
+}
+
+#tarjeta-botones h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: "Montserrat",sans-serif;
+    color: #A53860;
+}
+
+/* BOTONES */
+.botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-family: "Montserrat",sans-serif;
+}
+
+.boton {
+    background-color: #f0ebe3;
+    color: #450920;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    text-align: center;
+    flex: 1;
+    font-weight: 700;
+}
+
+.boton:hover {
+    background-color: #A53860;
+    color: white;
+}
+
+.solapa {
+    background-color: #FFA5AB;
+    border-radius: 15px 15px 0 0;
+    padding: 15px 20px;
+    align-self: flex-start;  /* se pega a la izquierda */
+    
+}
+
+
+html {
+    scroll-behavior: smooth;   /* hace que el scroll sea fluido (flecha) */
+}
+
+/* CONTENEDOR QUE CENTRA TODO */
+.contenedor-inicio {
+    max-width: 900px;       /* mismo ancho que la tarjeta principal */
+    margin: 50px auto;         /* centra horizontalmente y da espacio arriba */
+    display: flex;
+    flex-direction: column;
+    gap: 0;                 /* sin espacio entre redes y tarjeta para que parezca que la pestaña sale de la tarjeta */
+}
+
+.titulo-destacados {
+    color: #A53860;
+    font-size: 25px;
+    margin-bottom: 50px;
+    background-color: #FFA5AB;  /* rectángulo rosa */
+    text-align: center;          /* texto centrado */
+    padding: 18px 30px;          /* espacio interno del rectángulo */
+    border-radius: 18px;          /* esquinas levemente redondeadas */
+    max-width: 900px;
+    margin-top: 90px;
+
+}
+
+.contenido-destacados {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+
+#destacados {
+    
+    gap: 60px 200px;           /* espacio entre tarjetas */
+    
+}
+
+/* TARJETAS MÁS CHICAS PARA LA SECCIÓN DE DESTACADOS */
+#destacados .tarjeta {
+    width: 300px;
+}
+
+#destacados .tarjeta img {
+    height: 290px;
+}
+
+/* Por defecto muestra español y oculta inglés */
+.en {
+    display: none;
+}
+
+.es {
+    display: inline;
+}
+
+/* Cuando el body tiene la clase "lang-en", se invierte */
+body.lang-en .en {
+    display: inline;
+}
+
+body.lang-en .es {
+    display: none;
+}
+
+.contenedor-video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* proporción 16:9 estándar de video */
+    height: 0;
+}
+
+.contenedor-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 650px) {
+    .contenido-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto {
+        width: 180px;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+}

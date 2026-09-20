@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* TÍTULO DE LA SECCIÓN */
+.titulo-seccion {
+    color: #F7EEEE;
+    font-size: 40px;
+    margin-bottom: 40px;
+    background-color: #DA627D;  /* rectángulo rosa */
+    text-align: center;          /* texto centrado */
+    padding: 15px 30px;          /* espacio interno del rectángulo */
+    border-radius: 8px;          /* esquinas levemente redondeadas */
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+
+}
+
+
+/* GRILLA DE TARJETAS */
+.grilla-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* TARJETA */
+.tarjeta {
+    background-color: #FFA5AB;
+    border-radius: 20px;
+    padding: 15px;
+    width: 300px;
+    text-decoration: none;
+    color: #A53860;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+/* ETIQUETA ARRIBA */
+.etiqueta {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+/* IMAGEN */
+.tarjeta img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+/* PIE DE TARJETA (subtítulo + botón +) */
+.tarjeta-pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.subtitulo {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* BOTÓN + */
+.boton-mas {
+    background-color: #FFA5AB;
+    border: 3px solid #A53860;
+    color: #A53860;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 35px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HOVER — cambia toda la tarjeta y el botón + */
+.tarjeta:hover {
+    background-color: #e08890;
+}
+
+.tarjeta:hover .boton-mas {
+    background-color: #450920;
+    color: white;
+    border-color: #450920;
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPU - Jazmin Novoa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/proyecto.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="cerrarLightbox()">
+    <img id="lightbox-img" src="" alt="imagen ampliada">
+</div>
+</head>
+<body id="top">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+        <a href="index.html" class="navbar-home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <div class="navbar-derecha">
+            <div class="idioma">
+                <button class="idioma-btn btn-es activo">Español</button>
+                <button class="idioma-btn btn-en">English</button>
+            </div>
+            <button class="hamburguesa" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="menu-desplegable" id="menuDesplegable">
+            <a href="grafico.html">
+                <span class="es">Diseño gráfico</span>
+                <span class="en">Graphic design</span>
+            </a>
+            <a href="industrial.html">
+                <span class="es">Diseño industrial</span>
+                <span class="en">Industrial design</span>
+            </a>
+            <a href="uxui.html">
+                <span class="es">Diseño UX/UI</span>
+                <span class="en">UX/UI design</span>
+            </a>
+            <a href="juegos.html">
+                <span class="es">Diseño de juegos</span>
+                <span class="en">Game design</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <div class="contenedor-pagina">
+
+        <!-- ETIQUETA DE CATEGORÍA -->
+        <div class="etiqueta-categoria">
+            <span class="es">Diseño industrial</span>
+            <span class="en">Industrial design</span>
+        </div>
+
+        <!-- TARJETA GRANDE -->
+        <div class="tarjeta-proyecto">
+
+            <!-- BLOQUE 1: título + texto intro a la izquierda, imagen grande a la derecha -->
+            <div class="bloque bloque-intro">
+                <div class="bloque-texto">
+                    <h1 class="titulo-proyecto">"MAPU"</h1>
+                    <p>
+                        <span class="es">MAPU (Manual Autogestivo de Patios Urbanos) es un proyecto que comprende la necesidad de los vecinos de CABA de tener al menos una plaza cercana en su barrio. Se busca <strong>estandarizar el armado y gestión de plazas creadas a partir de lotes en desuso</strong>, simplificándoles a los vecinos y al gobierno esa etapa del proceso.</span> 
+                        <span class="en">MAPU (Self-Management Handbook for Urban Squares) is a project that recognises the need for residents of Buenos Aires to have at least one nearby square in their neighbourhood. It aims to <strong>standardise the creation and management of squares developed from disused plots</strong>, thereby simplifying this stage of the process for both residents and the government.</span>
+                    </p>
+
+                    <p>
+                        <span class="es"><strong>
+                            Al ser un proyecto muy amplio, esta sección solo se va a centrar en el diseño de mobiliario urbano, el cual fue diseñado específicamente para estos patios urbanos que respondían a las necesidades vecinales.
+                            Esto es solo parte del tomo M (mobiliario) del manual.</strong></span>
+                        <span class="en"><strong>
+                            As this is a very wide-ranging project, this section will focus only on the design of street furniture, which was specifically designed for these urban courtyards to meet the needs of the local community.
+                           This is just part of Volume M (street furniture) of the manual.</strong></span>
+                    </p>
+                    <div id="creditos-gamer">
+                        <p>
+                            <span class="es"><strong>Diseñado por:</strong> Violeta Godoy, Jazmin Novoa</span>
+                            <span class="en"><strong>Design by:</strong> Violeta Godoy, Jazmin Novoa</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bloque-imagen">
+                    <img src="imagenes/MAPU/Portada.png" alt="Portada MAPU">
+                </div>
+            </div>
+
+             <!-- BLOQUE 2: imagen centrada -->
+             <div class="bloque bloque-dos-imagenes">
+                <div class="bloque-imagen-chica">
+                    <span class="es"><img src="imagenes/MAPU/Analisis.png" alt="Analisis mobiliario"></span>
+                    <span class="en"><img src="imagenes/MAPU/Analisis ing.png" alt="Analisis mobiliario"></span>
+                </div>
+            </div>
+
+            <p class="subtitulitos">
+                <span class="es">Desarrollo del sistema</span>
+                <span class="en">System development</span>
+            </p>
+
+            <!-- BLOQUE 3: imagen izquierda, texto + imagen derecha -->
+            <div class="bloque bloque-mixto">
+                <div class="bloque-imagen-con-epígrafe">
+                    <img src="imagenes/MAPU/Tabla.png" alt="Tabla muebles">
+                    <p class="epigrafe">
+                        <span class="es">Tabla figuras</span>
+                        <span class="en">Table of figures</span>
+                    </p>
+                </div>
+                <div class="bloque-texto-imagen">
+                    <p>
+                    <span class="es">El sistema de mobiliario se desarrolló tomando como base la <strong>matriz principal</strong> de MAPU. <br>
+                    <br><br>A partir de esta matriz se construyeron dos tablas, <strong>abstrayendo figuras</strong> que permiten combinarlas de distintas maneras para lograr el sistema de mobiliario. <br>
+                    <br><br>Para maximizar la utilidad y diversidad del sistema estas tablas se dividen en cuatro columnas que muestran la misma forma modificada por un radio distinto.</span>
+
+                    <span class="en">The furniture system was developed based on MAPU's <strong>main grid</strong>. <br>
+                    <br><br>Using this grid as a starting point, two tables were created, <strong>featuring shapes</strong> that can be combined in various ways to form the furniture system. <br> 
+                    <br><br>To maximise the system's versatility and range of applications, these tables are divided into four columns, each displaying the same shape modified by a different radius.</span>
+                    </p>
+                    <p></p>
+                    <p class="epigrafe-subtitulo">
+                        <span class="es">Matriz/grilla base</span>
+                        <span class="en">Base grid</span>
+                    </p>
+                    <img src="imagenes/MAPU/Grilla.png" alt="Grilla">
+                </div>
+            </div>
+
+            <p class="epigrafe">
+                <span class="es">Los colores representan la zona del parque a la que pertenece,<br> azul <strong>zona cultural</strong>, naranja <strong>zona ocio</strong>, rosa <strong>zona juegos</strong>, amarillo <br> <strong>zona de descanso</strong> y gris para los <strong>caminos</strong>.</span>
+                <span class="en">The colours indicate the area of the park to which they belong: <br>blue for the <strong>cultural area</strong>, orange for the <strong>leisure area</strong>, pink for the <br><strong>play area</strong>, yellow for the <strong>rest area</strong>, and grey for the <strong>paths</strong>.</span>
+            </p>
+
+            <!-- BLOQUE 4: imagen grande centrada -->
+            <div class="bloque bloque-final">
+
+                <p class="subtitulitos">
+                    <span class="es">Zona cultural</span>
+                    <span class="en">Cultural area</span>
+                </p>
+                <span class="es"><img src="imagenes/MAPU/zona cultural.png" alt="zona cultural"
+                    class="imagen-clickeable"
+                    onclick="abrirLightbox(this)"></span>
+                    <span class="en"><img src="imagenes/MAPU/Cultural zone.png" alt="zona cultural"
+                        class="imagen-clickeable"
+                        onclick="abrirLightbox(this)"></span>
+
+                <p class="subtitulitos">
+                    <span class="es">Zona ocio</span>
+                    <span class="en">Leisure area</span>
+                </p>
+                <span class="es"><img src="imagenes/MAPU/zona ocio.png" alt="zona ocio"
+                    class="imagen-clickeable"
+                    onclick="abrirLightbox(this)"></span>
+                    <span class="en"><img src="imagenes/MAPU/ocio zone.png" alt="zona ocio"
+                        class="imagen-clickeable"
+                        onclick="abrirLightbox(this)"></span>
+
+                <p class="subtitulitos">
+                    <span class="es">Zona juegos</span>
+                    <span class="en">Play area</span>
+                </p>
+                <span class="es"><img src="imagenes/MAPU/zona juegos.png" alt="zona juegos"
+                    class="imagen-clickeable"
+                    onclick="abrirLightbox(this)"></span>
+                    <span class="en"><img src="imagenes/MAPU/play zone.png" alt="zona juegos"
+                        class="imagen-clickeable"
+                        onclick="abrirLightbox(this)"></span>
+
+                <p class="subtitulitos">
+                    <span class="es">Zona descanso</span>
+                    <span class="en">Rest area</span>
+                </p>
+                <span class="es"><img src="imagenes/MAPU/zona descanso.png" alt="zona descanso"
+                    class="imagen-clickeable"
+                    onclick="abrirLightbox(this)"></span>
+                <span class="en"><img src="imagenes/MAPU/rest zone.png" alt="zona descanso"
+                    class="imagen-clickeable"
+                    onclick="abrirLightbox(this)"></span>
+
+                <p class="subtitulitos">
+                    <span class="es">Caminos</span>
+                    <span class="en">Paths</span>
+                </p>
+                <span class="es"><img src="imagenes/MAPU/caminos.png" alt="caminos"
+                    class="imagen-clickeable"
+                    onclick="abrirLightbox(this)"></span>
+                <span class="en"><img src="imagenes/MAPU/roads.png" alt="caminos"
+                    class="imagen-clickeable"
+                    onclick="abrirLightbox(this)"></span>
+
+            </div>
+
+             <!-- BLOQUE 2: imagen centrada -->
+             <p class="subtitulitos">
+                <span class="es">Panel general del proyecto</span>
+                <span class="en">Project overview</span>
+             </p>
+             <div class="bloque bloque-dos-imagenes">
+                <div class="bloque-imagen-chica">
+                    <img src="imagenes/MAPU/Panel.jpg" alt="Panel"
+                    class="imagen-clickeable"
+                    onclick="abrirLightbox(this)">
+                </div>
+            </div>
+
+            <!-- Botón -->
+             <p class="epigrafe-mapu">
+                <span class="es">Si te interesa saber más del proyecto</span>
+                <span class="en">If you'd like to find out more about the project</span>
+             </p>
+            <a href="mailto:labdejaz.22@gmail.com" target="_blank" class="boton-proceso-mapu">
+                <span class="es">Contactame</span>
+                <span class="en">Contact me</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- FLECHAS DE NAVEGACIÓN ENTRE PROYECTOS -->
+<div class="nav-proyectos">
+    <a href="arcade.html" class="flecha-nav flecha-izq">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+     <!-- FLECHA DEL MEDIO -->
+     <a href="#top" class="flecha-nav flecha-arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <a href="renders.html" class="flecha-nav flecha-der">
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+</div>
+
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuDesplegable');
+            menu.classList.toggle('abierto');
+        }
+        document.addEventListener('click', function(e) {
+            const menu = document.getElementById('menuDesplegable');
+            const hamburguesa = document.querySelector('.hamburguesa');
+            if (!menu.contains(e.target) && !hamburguesa.contains(e.target)) {
+                menu.classList.remove('abierto');
+            }
+        });
+
+        function abrirLightbox(imagen) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    lightboxImg.src = imagen.src;   // copia el src de la imagen clickeada
+    lightbox.classList.add('abierto');
+}
+
+function cerrarLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('abierto');
+}
+
+// También se cierra con la tecla Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        cerrarLightbox();
+    }
+});
+// CAMBIO DE IDIOMA
+const btnEspanol = document.querySelectorAll('.btn-es');
+    const btnIngles = document.querySelectorAll('.btn-en');
+
+    // Al cargar la página, recupera el idioma guardado
+    const idiomaGuardado = localStorage.getItem('idioma');
+    if (idiomaGuardado === 'en') {
+        document.body.classList.add('lang-en');
+        marcarBotonActivo('en');
+    }
+
+    btnEspanol.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.remove('lang-en');
+            localStorage.setItem('idioma', 'es');
+            marcarBotonActivo('es');
+        });
+    });
+
+    btnIngles.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.add('lang-en');
+            localStorage.setItem('idioma', 'en');
+            marcarBotonActivo('en');
+        });
+    });
+
+    function marcarBotonActivo(idioma) {
+        document.querySelectorAll('.btn-es').forEach(b => {
+            b.classList.toggle('activo', idioma === 'es');
+        });
+        document.querySelectorAll('.btn-en').forEach(b => {
+            b.classList.toggle('activo', idioma === 'en');
+        });
+    }
+    </script>
+
+        <!-- FOOTER -->
+<footer class="footer">
+
+    <!-- COLUMNA IZQUIERDA: contacto -->
+    <div class="footer-izq">
+        <p> 
+            <span class="es">Contactame directamente</span>
+            <span class="en">Contact me directly</span>
+        </p>
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            +54 9 2996330619</p>
+        <div class="footer-redes">
+        <a href="tel:+5492996330619">
+        </a>
+        </div>
+    </div>
+
+    <!-- COLUMNA CENTRO: nombre + redes -->
+    <div class="footer-centro">
+        <p class="footer-nombre">Jazmin Novoa</p>
+        <p class="footer-subtitulo">Diseñadora integral</p>
+        <p class="footer-subtitulo">Buenos Aires, Argentina</p>
+        <div class="footer-redes">
+            <a href="https://www.instagram.com/jaznovoa.lab" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jazmin-novoa" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:labdejaz.22@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- COLUMNA DERECHA: botón CV -->
+    <div class="footer-der">
+        <a href="curriculum.html" target="_blank" class="boton-cv">
+            <span class="es">Mira mi CV</span>
+            <span class="en">See my CV</span>
+        </a>
+    </div>
+
+</footer>
+
+</body>
+</html>
