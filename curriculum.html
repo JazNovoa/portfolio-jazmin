@@ -98,56 +98,75 @@
 
     </main>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menuDesplegable');
-            menu.classList.toggle('abierto');
-        }
-        document.addEventListener('click', function(e) {
-            const menu = document.getElementById('menuDesplegable');
-            const hamburguesa = document.querySelector('.hamburguesa');
-            if (!menu.contains(e.target) && !hamburguesa.contains(e.target)) {
-                menu.classList.remove('abierto');
-            }
-        });
-    </script>
 
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menuDesplegable');
+        menu.classList.toggle('abierto');
+    }
+    document.addEventListener('click', function(e) {
+        const menu = document.getElementById('menuDesplegable');
+        const hamburguesa = document.querySelector('.hamburguesa');
+        if (!menu.contains(e.target) && !hamburguesa.contains(e.target)) {
+            menu.classList.remove('abierto');
+        }
+    });
+
+    function abrirLightbox(imagen) {
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+lightboxImg.src = imagen.src;   // copia el src de la imagen clickeada
+lightbox.classList.add('abierto');
+}
+
+function cerrarLightbox() {
+const lightbox = document.getElementById('lightbox');
+lightbox.classList.remove('abierto');
+}
+
+// También se cierra con la tecla Escape
+document.addEventListener('keydown', function(e) {
+if (e.key === 'Escape') {
+    cerrarLightbox();
+}
+});
 // CAMBIO DE IDIOMA
 const btnEspanol = document.querySelectorAll('.btn-es');
-    const btnIngles = document.querySelectorAll('.btn-en');
+const btnIngles = document.querySelectorAll('.btn-en');
 
-    // Al cargar la página, recupera el idioma guardado
-    const idiomaGuardado = localStorage.getItem('idioma');
-    if (idiomaGuardado === 'en') {
+// Al cargar la página, recupera el idioma guardado
+const idiomaGuardado = localStorage.getItem('idioma');
+if (idiomaGuardado === 'en') {
+    document.body.classList.add('lang-en');
+    marcarBotonActivo('en');
+}
+
+btnEspanol.forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.body.classList.remove('lang-en');
+        localStorage.setItem('idioma', 'es');
+        marcarBotonActivo('es');
+    });
+});
+
+btnIngles.forEach(btn => {
+    btn.addEventListener('click', function() {
         document.body.classList.add('lang-en');
+        localStorage.setItem('idioma', 'en');
         marcarBotonActivo('en');
-    }
-
-    btnEspanol.forEach(btn => {
-        btn.addEventListener('click', function() {
-            document.body.classList.remove('lang-en');
-            localStorage.setItem('idioma', 'es');
-            marcarBotonActivo('es');
-        });
     });
+});
 
-    btnIngles.forEach(btn => {
-        btn.addEventListener('click', function() {
-            document.body.classList.add('lang-en');
-            localStorage.setItem('idioma', 'en');
-            marcarBotonActivo('en');
-        });
+function marcarBotonActivo(idioma) {
+    document.querySelectorAll('.btn-es').forEach(b => {
+        b.classList.toggle('activo', idioma === 'es');
     });
-
-    function marcarBotonActivo(idioma) {
-        document.querySelectorAll('.btn-es').forEach(b => {
-            b.classList.toggle('activo', idioma === 'es');
-        });
-        document.querySelectorAll('.btn-en').forEach(b => {
-            b.classList.toggle('activo', idioma === 'en');
-        });
-    }
-    </script>
+    document.querySelectorAll('.btn-en').forEach(b => {
+        b.classList.toggle('activo', idioma === 'en');
+    });
+}
+</script>
 
         <!-- FOOTER -->
 <footer class="footer">
