@@ -81,12 +81,8 @@
             <div class="bloque bloque-dos-imagenes">
                 <div class="bloque-imagen-chica">
                 
-                    <span class="es"><img src="./imagenes/CV-03.jpg" alt="cv"
-                        class="imagen-clickeable"
-                        onclick="abrirLightbox(this)"></span>
-                        <span class="en"><img src="./imagenes/English cv.jpg" alt="caminos"
-                            class="imagen-clickeable"
-                            onclick="abrirLightbox(this)"></span>
+                    <span class="es"><img src="./imagenes/CV-03.jpg" alt="cv"></span>
+                        <span class="en"><img src="./imagenes/English cv.jpg" alt="english cv"></span>
                 </div>
             </div>
 
@@ -114,6 +110,43 @@
                 menu.classList.remove('abierto');
             }
         });
+    </script>
+
+// CAMBIO DE IDIOMA
+const btnEspanol = document.querySelectorAll('.btn-es');
+    const btnIngles = document.querySelectorAll('.btn-en');
+
+    // Al cargar la página, recupera el idioma guardado
+    const idiomaGuardado = localStorage.getItem('idioma');
+    if (idiomaGuardado === 'en') {
+        document.body.classList.add('lang-en');
+        marcarBotonActivo('en');
+    }
+
+    btnEspanol.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.remove('lang-en');
+            localStorage.setItem('idioma', 'es');
+            marcarBotonActivo('es');
+        });
+    });
+
+    btnIngles.forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.body.classList.add('lang-en');
+            localStorage.setItem('idioma', 'en');
+            marcarBotonActivo('en');
+        });
+    });
+
+    function marcarBotonActivo(idioma) {
+        document.querySelectorAll('.btn-es').forEach(b => {
+            b.classList.toggle('activo', idioma === 'es');
+        });
+        document.querySelectorAll('.btn-en').forEach(b => {
+            b.classList.toggle('activo', idioma === 'en');
+        });
+    }
     </script>
 
         <!-- FOOTER -->
